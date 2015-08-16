@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap2</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<link rel="stylesheet" href="includes/css/style.css">
+</head>
+<body>
+
+	<div class="container" id="main">
+
+		<div class="navbar navbar-fixed-top">
+
+			<div class="container">
+				
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="/" class="navbar-brand"><img src="./images/logo.png" alt="Your Logo"></a>
+
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+
+
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+						
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Web Design</a>
+								</li> 
+								
+								<li>
+									<a href="#">Web Development</a>
+								</li>
+								
+								<li>
+									<a href="#">SEO</a>
+								</li>
+
+								<li class="divider"></li>
+								
+								<li class="dropdown-header">
+									More Services 
+								</li> 
+								
+								<li>
+									<a href="#">Web Social</a>
+								</li>
+								
+								<li>
+									<a href="#">Learn</a>
+								</li>
+
+							</ul><!-- end dropdown-menu -->
+					    </li>
+					</ul>
+				
+								<form action="/" class="navbar-form pull-left">
+					<input type="text" class="form-control" placeholder="search it ..." id="searchInput">
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				</form>  <!--  end navbar-form-->
+
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-user"></span> My Account<strong class="caret"></strong>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>  Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>  More profile</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><span class="glyphicon glyphicon-off"></span>  Sign out</a></li>
+						</ul>
+					</li>
+				</ul>  <!--  end nav pull-right-->
+
+				</div>  <!-- end nav-collapse -->
+
+
+
+			</div>
+
+		</div>  <!-- end navbar -->
+
+<div class="carousel slide" id="myCarousel">
+			
+			<!-- Indicators  -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+
+			<!-- Wrapper for slides-->
+				<div class="carousel-inner">
+
+					<div class="item active" id="slide1">
+					<!-- add img here -->
+					
+						<div class="carousel-caption">
+							<h4>Bootstrap 3</h4>
+							<p>Learn how to build first responsive website with Bootstrap3</p>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end item -->
+
+					<div class="item" id="slide2">
+					
+						<div class="carousel-caption">
+							<h4>HTML5 </h4>
+							<p>Learn how to build first responsive website with HTML5</p>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end item -->
+
+					<div class="item" id="slide3">
+
+						<div class="carousel-caption">
+							<h4>Javascript</h4>
+							<p>Learn how to build first responsive website with javascript</p>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end item -->
+				</div> <!-- end carousel-inner -->
+				
+				<!-- Controls -->
+					<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+
+					<a href="#myCarousel" class="right carousel-control" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+
+				
+
+
+		</div> <!-- end carousel -->
+
+
+		<div class="row" id="bigCallout"></div>  <!--  end bigCallout -->
+
+		<div class="row" id="featuresHeading"></div>  <!-- end featureHeadings  -->
+
+		<div class="row" id="features"></div>  <!--  end features-->
+
+		<div class="row" id="moreInfo"></div>  <!--  end moreInfo -->
+
+		<div class="row" id="moreCourses"></div>  <!--  end moreCourses -->
+
+	</div>
+	<footer></footer>
+
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+</body>
+</html>
